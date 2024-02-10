@@ -1,0 +1,20 @@
+
+
+dependencies {
+    implementation project(':shared')
+    implementation project(':sharedKernel')
+    implementation project(':domain')
+    implementation project(':application')
+
+    implementation('io.quarkus:quarkus-arc')
+    implementation("io.quarkus:quarkus-rest-client-reactive-jackson")
+    implementation("org.jboss.logmanager:log4j2-jboss-logmanager")
+    implementation("io.quarkus:quarkus-smallrye-fault-tolerance")
+
+}
+
+allOpen {
+    annotation("jakarta.ws.rs.Path")
+    annotation("jakarta.enterprise.context.ApplicationScoped")
+    annotation("io.quarkus.test.junit.QuarkusTest")
+}

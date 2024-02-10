@@ -1,0 +1,14 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    plugins {
+        id 'io.quarkus' version "${quarkusPluginVersion}"
+    }
+}
+
+include 'shared', 'application', 'domain', 'infrastructure', 'sharedKernel'
+
+rootProject.name = 'ms-quarkus-arquetype'

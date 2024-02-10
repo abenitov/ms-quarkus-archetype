@@ -1,0 +1,18 @@
+
+dependencies {
+    api 'io.quarkus:quarkus-kotlin'
+    api 'io.quarkus:quarkus-resteasy-reactive-jackson'
+    api 'io.quarkus:quarkus-arc'
+    api 'io.quarkus:quarkus-resteasy-reactive'
+
+
+
+
+    implementation 'io.quarkus:quarkus-config-yaml'
+    implementation("io.quarkus:quarkus-rest-client-reactive-jackson")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.15.2")
+
+
+
+}
+
