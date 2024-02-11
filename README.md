@@ -4,7 +4,7 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
-From a DDD approach and Hexagonal architecture consideration, the project is divided into three modules:
+From a DDD approach and Hexagonal architecture consideration, the project is divided into five modules:
 
 - infrastructure
 - domain
@@ -12,7 +12,7 @@ From a DDD approach and Hexagonal architecture consideration, the project is div
 - shared
 - sharedKernel
 
-All the command described in this document should be run from the infrastructure folder.
+**All the command described in this document should be run from the infrastructure folder.**
 
 ## Running the application in dev mode
 
