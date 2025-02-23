@@ -7,8 +7,10 @@ dependencies {
     implementation project(':application')
 
     implementation('io.quarkus:quarkus-arc')
-    implementation("io.quarkus:quarkus-rest-client-reactive-jackson")
-    implementation("org.jboss.logmanager:log4j2-jboss-logmanager")
+    implementation("io.quarkus:quarkus-rest")
+    implementation("io.quarkus:quarkus-rest-jackson")
+
+implementation("org.jboss.logmanager:log4j2-jboss-logmanager")
     implementation("io.quarkus:quarkus-smallrye-fault-tolerance")
 
 }

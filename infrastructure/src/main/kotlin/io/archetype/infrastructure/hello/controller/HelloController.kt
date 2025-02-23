@@ -1,15 +1,18 @@
 package io.archetype.infrastructure.hello.controller
 
 import jakarta.ws.rs.*
+import jakarta.ws.rs.core.MediaType.APPLICATION_JSON
+import jakarta.ws.rs.core.Response
 
-
-@Produces(value = ["application/json"])
 @Path("/hello")
-class HelloController() {
+class lcoalhosHelloController() {
 
     @GET
-    @Path("/")
-    fun hello() :Map<String,Any>{
-        return mapOf("message" to "Hello")
+    @Produces(APPLICATION_JSON)
+    @Path("")
+    fun hello() :Response{
+        return Response.ok(mapOf(
+            "message" to "Hello World"
+        )).build()
     }
 }
